@@ -4,10 +4,10 @@ alert("hello"); - вывводит надпись
 jQuery('document').ready(function() {
     jQuery('body').append('<a href="#">aaaaaaayyyyyyy</a>');
 }); - вывводит ссылку на сайт*/
-jQuery('document').ready(function() {
+/*jQuery('document').ready(function() {
     
     jQuery('body').append('<a href="#">aaaaaaayyyyyyy</a>');
     
-    /*jQuery('div').remove(); - удалить все div*/
+    /*jQuery('div').remove(); - удалить все div
     
 });
