@@ -1,19 +1,5 @@
 body{
-    
-   /* background:#6f6c6c;
-  background-size: 100%;
-    
-    background-repeat: no-repeat;
-    background-color: #ccc;*/
-    /*font-family: 'Exo', sans-serif;
-    font-family: 'Roboto', sans-serif
-    font-family: 'Montserrat', sans-serif;;
-    color: #fafafa;*/
-    /*margin-top: -10px;
-    margin-left: -10px;
-    margin-right: -10px;*/
     font-family: 'Montserrat', sans-serif;
-    
  }
 
 * {
@@ -314,7 +300,7 @@ footer h{
 }
 
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 850px){
     .card{
         display: flex;
         justify-content: center;
@@ -353,7 +339,8 @@ h3{
 
 .first img{
     width: 100%;
-
+    overflow: hidden;
+    height: 100%;
     
     /*border: 1px ridge #fafafa;*/ 
 }
@@ -543,7 +530,7 @@ h3{
 
 @media screen  and (max-width: 1090px){
     .second{
-        flex-basis: 29%;
+        flex-basis: 33%;
     }
 }
 
@@ -557,7 +544,7 @@ h3{
 @media screen  and (max-width: 1000px){
     
     #title-1 {
-    padding-bottom: 20px;
+        padding-bottom: 20px;
     }
     .ph{
         text-align: center;
@@ -582,7 +569,7 @@ h3{
         margin-top: 10px;
     }
     .line1{
-        width: 100%;
+        width: 80%;
     }
     
     #title-2{
@@ -590,41 +577,16 @@ h3{
     }
     
     .first{
-    flex-basis: 30%;
-    outline: 0px ridge #b1b1b1;
-    outline-offset: 0px;
-    /*margin-right: 18px;*/
-    
+        flex-basis: 35%;
+
     }
     
-    .first img{
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    
-    .second{
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-    }
-    
-    .first{
-        text-align: center;
-        border: 0px;
-        margin-top: 30px;
-        
-    }
-    .first img{
-        width: 88%;
-        border: 2px ridge #b1b1b1;
-    }
-    .second{
-        margin: 0 auto;
-        text-align: center;
-        width: 89%;
-        margin-top: -5px;
-    }
     .mes{
         padding: 0px;
+    }
+    
+    .lv-1{
+        margin-top: 0px;
     }
 }
 
@@ -686,15 +648,8 @@ h3{
         
         font-size: 24px;
     }
-    .lv-1{
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
     .lv-1 iframe{
         width: auto;
-    }
-    #title-2{
-        background: ;
     }
     #title-2{
         padding-bottom: 50px;
@@ -755,14 +710,60 @@ h3{
 
 @media screen  and (max-width: 1000px){
     .mes{
-        padding-top: 0px;
+        
     }
 }
+
+@media screen  and (max-width: 850px){
+    .first{
+        flex-basis: 30%;
+        outline: 0px ridge #b1b1b1;
+        outline-offset: 0px;
+    }
+    
+    .first{
+        text-align: center;
+        border: 0px;
+        margin-top: 30px;
+        
+    }
+    .first img{
+        width: 88%;
+        border: 2px ridge #b1b1b1;
+    }
+    .second{
+        margin: 0 auto;
+        text-align: center;
+        width: 89%;
+        margin-top: -5px;
+    }
+    
+        .first img{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
+    .second{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+
+
 
 @media screen  and (max-width: 375px){
     .menu a{
         font-size: 18px;
         padding-right: 10px;
+    }
+    .mes img{
+        width: 20px;
+        padding: 8px;
+    }
+
+    .mes a{
+        margin: 3px;
     }
 }
 
