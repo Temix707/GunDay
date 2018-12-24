@@ -12,6 +12,8 @@ div{
 
 }
 
+/*---------HOME----------*/
+
 #hed-1{
     background: url(../img/bas5-1.jpg)no-repeat center / cover;
     background-attachment: fixed;
@@ -262,24 +264,6 @@ a{
 }
 
 
-footer{
-    flex-basis: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    padding-bottom: 80px;
-    background: #141414;
-}
-
-footer h{
-    margin-top: 50px;
-    font-size: 15px;
-    font-weight: 100;
-    color: #fafafa; 
-}
-
-
-
 
 /*-----------CONTACS-------------*/
 
@@ -396,6 +380,7 @@ h3{
 .mes img{
     width: 30px;
     padding: 8px;
+    
 }
 
 .mes a{
@@ -408,6 +393,7 @@ h3{
    background: #313131; 
    margin: 5px;
    transition: 0.3s;
+   
 }
 
 
@@ -427,6 +413,8 @@ h3{
 
 
 /*------VIDEOS-------*/
+
+
 
 #hed-3{
     background: #1d1d1d /*url(../img/mj-1.png)no-repeat center / cover*/;
@@ -510,13 +498,26 @@ h3{
 }
 
 
+footer{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 80px;
+    background: #141414;
+}
+
+footer h{
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #fafafa; 
+}
 
 
 
 
 /*---------MEDIA ЗАПРОСЫ-----------*/
-
-
 
 
 
@@ -544,7 +545,7 @@ h3{
 @media screen  and (max-width: 1000px){
     
     #title-1 {
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
     .ph{
         text-align: center;
@@ -555,17 +556,20 @@ h3{
         text-align: center;
         margin-bottom: 60px;
         background: #740909;
-        flex-basis: 100%;
+        flex-basis: 44%;
         margin-top: 60px;
         border: 4px outset #fafafa;
         margin-left: 0px;
         opacity: 0.9;
     }
+    .caption{
+        padding-left: 40px;
+    }
     .caption p{
-        font-size: 80px;
+        font-size: 50px;
     }
     .caption-1 h2{
-        font-size: 90px;
+        font-size: 60px;
         margin-top: 10px;
     }
     .line1{
@@ -574,6 +578,8 @@ h3{
     
     #title-2{
         background: black;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     
     .first{
@@ -650,9 +656,6 @@ h3{
     }
     .lv-1 iframe{
         width: auto;
-    }
-    #title-2{
-        padding-bottom: 50px;
     }
     .group{
         margin-left: 50px;
@@ -767,7 +770,7 @@ h3{
     }
 }
 
-@media screen  and (max-width: 390px){
+@media screen  and (max-width: 400px){
     
     .menu{
         height: 100px;
@@ -795,13 +798,16 @@ h3{
     }
     
     .menu li{
+        padding-top: 3px;
+        
         display: block;
     }
     
     .menu a{
         font-size: 25px;
     }
-    
+}
+    @media screen  and (max-width: 530px){
     .ph img{
         width: 250px;
     }
@@ -827,7 +833,7 @@ h3{
     }
     
     .l-4{
-        margin-top: 40px;
+        margin-top: 50px;
     }
     
     .group{

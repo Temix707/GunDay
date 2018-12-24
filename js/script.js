@@ -10,4 +10,6 @@ jQuery('document').ready(function() {
     
     /*jQuery('div').remove(); - удалить все div
     
-});
+});*/
+
+document.getElementById('hel').innerHTML = 'hello';
