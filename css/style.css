@@ -260,7 +260,7 @@ a{
 .lv-1{
     border: 4px outset #ffffff;
     background: #740909;
-    /*flex-basis: 40%;*/
+    flex-basis: 40%;
     margin-top: 200px;
     text-align: center;
     padding: 25px;
@@ -530,11 +530,57 @@ footer h{
     color: #fafafa; 
 }
 
+#foot-1{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 80px;
+    background: #141414;
+}
+
+#foot-1 h{
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #fafafa; 
+}
 
 
 
 /*---------MEDIA ЗАПРОСЫ-----------*/
 
+
+@media screen  and (max-width: 2000px){
+    .mes{
+        padding-top: 200px;
+    }
+    
+    .mes img{
+        width: 40px;
+        padding: 10px;
+    
+    }
+    
+    .ph img{
+        width: 410px;
+        height: auto;
+        border: 4px outset #740909;
+        padding: 0px 10px 0px 10px;
+}
+    
+}
+
+@media screen  and (max-width: 1500px){
+    .mes{
+        padding-top: 150px;
+    }
+    .mes img{
+        width: 30px;
+        padding: 8px;
+    
+    }
+}
 
 
 @media screen  and (max-width: 1090px){
@@ -887,6 +933,13 @@ footer h{
         margin: 3px;
     }
 }
+
+@media screen  and (min-width: 1800px){
+    #foot-1{
+        display: none;
+    }
+}
+
 
 /*.menu ul{
     margin-top: 9px;    
