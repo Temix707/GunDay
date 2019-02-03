@@ -7,6 +7,7 @@ body{
     margin: 0;
 }
 
+
 div{
     box-sizing: border-box;
 
@@ -15,6 +16,11 @@ div{
 /*---------HOME----------*/
 
 #hed-1{
+    background: #141414;/*#1d1d1d*/
+    background-attachment: fixed;
+}
+
+#head-1{
     background: url(../img/bas5-1.jpg)no-repeat center / cover;
     background-attachment: fixed;
     border: 3px solid black;
@@ -299,11 +305,10 @@ a{
     margin-top: -10px;
 }
 
-#hed-2{
+.best{
     background: /*#1f1f1f*/ url(../img/ars.png) center no-repeat / cover;
     background-attachment: fixed;
     border: 0;
-
 }
 
 
@@ -424,7 +429,10 @@ h3{
     background: #740909;
 }
 
-
+#hed-2{
+    background: #141414;
+    background-attachment: fixed;
+}
 
 
 
@@ -433,11 +441,11 @@ h3{
 
 
 #hed-3{
-    background: #1d1d1d /*url(../img/mj-1.png)no-repeat center / cover*/;
+    background: black /*url(../img/mj-1.png)no-repeat center / cover*/;
     background-attachment: fixed;
 }
 
-.l-4{
+.l-4,.l-4-1{
     margin-top: 10px;
 }
 
@@ -446,6 +454,7 @@ h3{
     height: 1px;
     width: 100%;
     margin: 0 auto;
+    
 }
 
 .flex-cont-2{
@@ -494,7 +503,7 @@ h3{
 #title-4{
     margin-top: 50px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 50px; 
 }
 
 
@@ -502,15 +511,14 @@ h3{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
-        
+    flex-wrap: wrap;   
 }
 
 
 .video {
     flex-basis: 10%;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 20px;  
 }
 
 
@@ -537,6 +545,7 @@ footer h{
     flex-direction: row;
     padding-bottom: 80px;
     background: #141414;
+
 }
 
 #foot-1 h{
@@ -552,7 +561,7 @@ footer h{
 
 
 @media screen  and (max-width: 2000px){
-    .mes{
+    /*.mes{
         padding-top: 200px;
     }
     
@@ -560,7 +569,7 @@ footer h{
         width: 40px;
         padding: 10px;
     
-    }
+    }*/
     
     .ph img{
         width: 410px;
@@ -663,11 +672,22 @@ footer h{
     }
 }
 
+@media screen  and (min-width: 751px){
+    .l-4-1{
+       display: none;
+    }
+}
+
 @media screen  and (max-width: 750px){
     
-    #hed-1{
+    #head-1{
         background: black;
     }
+    
+    .best{
+        background: #410000;
+}
+    
     .menu ul{
         margin-top: 9px;    
         margin-left: 70px;
@@ -740,7 +760,22 @@ footer h{
     }
 }
 
-
+@media screen  and (min-width: 1699px){
+    .mes{
+        padding-top: 250px;
+    }
+    .mes img{
+        width: 40px;
+        padding: 10px;
+    
+    }
+    .cap {
+    box-shadow: none;
+    }
+    .lv-1 {
+        box-shadow: none;
+    }
+}
 
 @media screen  and (max-width: 1320px){
     .mes{
@@ -883,7 +918,7 @@ footer h{
         margin-left: 0px;
     }
     
-    .l-4{
+    .l-4,.l-4-1{
         margin-top: 50px;
     }
     
@@ -934,13 +969,26 @@ footer h{
     }
 }
 
-@media screen  and (min-width: 1800px){
+@media screen  and (min-width: 1500px){
     #foot-1{
         display: none;
     }
 }
 
+@media screen and (min-width: 1600px){
+    
+    .best{
 
+        max-width: 1600px;
+        margin: 0px auto; 
+        border: 2px solid black;
+    }
+    #hed-1,#hed-2,#hed-3{
+       max-width: 1600px;
+        margin: 0px auto; 
+        border: 2px solid black; 
+    }
+}
 /*.menu ul{
     margin-top: 9px;    
     float: left;
